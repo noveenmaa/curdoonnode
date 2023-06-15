@@ -1,0 +1,28 @@
+
+
+<h1 class="searched">searched result</h1>
+<div class="searchcontainer">
+
+<div class="m-4">
+  <table class="table">
+      <thead>
+          <tr>
+              <th>name</th>
+              <th>email</th>
+              <th>address</th>
+              <th>phone</th>
+          </tr>
+      </thead>
+      <tbody>
+        <% data.forEach(val => { %>
+          <tr>
+              <td><%= val.name %></td>
+              <td><%= val.email %></td>
+              <td><%= val.address %></td>
+              <td><%= val.phone %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+  </div>
+</div>
